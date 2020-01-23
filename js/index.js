@@ -22,3 +22,23 @@ let navLink = document.querySelectorAll(".nav-link").forEach(item => {
         item.style.fontSize = "1.7rem";
     })
 })
+
+//content-pick section
+let contentPick = document.querySelector(".content-pick");
+contentPick.addEventListener("click", () => {
+    contentPick.style.backgroundColor = "orange";
+
+})
+
+let destination = document.querySelector(".destination");
+destination.addEventListener("click", () => {
+    destination.style.color = "green";
+
+})
+
+let btn = document.querySelector(".btn");
+btn.addEventListener("click", (event) => {
+    btn.style.backgroundColor = "white";
+    btn.style.color = "black";
+    event.stopPropagation();
+})
